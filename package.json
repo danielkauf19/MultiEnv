@@ -1,0 +1,46 @@
+{
+  "name": "MultiEnv",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "start": "react-native start",
+    "test": "jest",
+    "lint": "eslint .",
+    "generate-icon:staging": "node updateAppJson.js --env staging && npx react-native-svg-app-icon",
+    "generate-icon:prod": "node updateAppJson.js --env prod && npx react-native-svg-app-icon",
+    "generate-icon:dev": "node updateAppJson.js --env dev && npx react-native-svg-app-icon",
+    "android:staging": "react-native run-android --variant=stagingdebug --appIdSuffix staging",
+    "android:staging-release": "react-native run-android --variant=stagingrelease --appIdSuffix staging",
+    "android:dev": "react-native run-android --variant=developmentdebug --appIdSuffix development",
+    "android:dev-release": "react-native run-android --variant=developmentrelease --appIdSuffix development",
+    "android:prod": "react-native run-android --variant=productiondebug --appIdSuffix production",
+    "android:prod-release": "react-native run-android --variant=productionrelease --appIdSuffix production"
+  },
+  "dependencies": {
+    "react": "17.0.2",
+    "react-native": "0.68.0",
+    "react-native-config": "^1.4.5",
+    "react-native-svg-app-icon": "^0.6.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.9",
+    "@babel/runtime": "^7.17.9",
+    "@react-native-community/eslint-config": "^3.0.1",
+    "@types/jest": "^27.4.1",
+    "@types/react": "^18.0.2",
+    "@types/react-native": "^0.67.4",
+    "@types/react-test-renderer": "^18.0.0",
+    "babel-jest": "^27.5.1",
+    "eslint": "^8.13.0",
+    "jest": "^27.5.1",
+    "metro-react-native-babel-preset": "^0.70.1",
+    "react-test-renderer": "17.0.2",
+    "typescript": "^4.6.3",
+    "yargs": "^17.4.1"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}

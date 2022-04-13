@@ -1,0 +1,11 @@
+{
+  "name": "MultiEnv",
+  "displayName": "MultiEnv",
+  "svgAppIcon": {
+    "foregroundPath": "./icons/dev/icon.svg",
+    "platforms": ["ios"],
+    "force": false,
+    "androidOutputPath": "./android/app/src/dev/res",
+    "iosOutputPath": "./ios/MultiEnv/Images.xcassets/AppIcon.appiconset"
+  }
+}
