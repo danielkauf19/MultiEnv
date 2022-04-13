@@ -1,10 +1,10 @@
 apply plugin: "com.android.application"
 
 project.ext.envConfigFiles = [
-   productiondebug: ".env.production",
-   productionrelease: ".env.production",
-   developmentrelease: ".env.development",
-   developmentdebug: ".env.development",
+   productiondebug: ".env.prod",
+   productionrelease: ".env.prod",
+   developmentrelease: ".env.dev",
+   developmentdebug: ".env.dev",
    stagingrelease: ".env.staging",
    stagingdebug: ".env.staging"
 ]
@@ -145,9 +145,9 @@ android {
     compileSdkVersion rootProject.ext.compileSdkVersion
     flavorDimensions "default"
     productFlavors {
-        production {
+        dev {
             minSdkVersion rootProject.ext.minSdkVersion
-            applicationId  "com.multienv.production"
+            applicationId  "com.multienv.prod"
             targetSdkVersion rootProject.ext.targetSdkVersion
             resValue "string", "build_config_package", "com.multienv"
             versionCode 1
@@ -161,9 +161,9 @@ android {
             versionCode 1
             versionName "1.0"
         }
-        development {
+        dev {
             minSdkVersion rootProject.ext.minSdkVersion
-            applicationId  "com.multienv.development"
+            applicationId  "com.multienv.dev"
             targetSdkVersion rootProject.ext.targetSdkVersion
             resValue "string", "build_config_package", "com.multienv"
             versionCode 1

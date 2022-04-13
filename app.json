@@ -1,6 +1,6 @@
 {
   "name": "MultiEnv",
-  "displayName": "MultiEnv",
+  "displayName": "test",
   "svgAppIcon": {
     "foregroundPath": "./icons/dev/icon.svg",
     "platforms": ["ios"],

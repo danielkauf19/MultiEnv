@@ -13,10 +13,10 @@
     "generate-icon:dev": "node updateAppJson.js --env dev && npx react-native-svg-app-icon",
     "android:staging": "react-native run-android --variant=stagingdebug --appIdSuffix staging",
     "android:staging-release": "react-native run-android --variant=stagingrelease --appIdSuffix staging",
-    "android:dev": "react-native run-android --variant=developmentdebug --appIdSuffix development",
-    "android:dev-release": "react-native run-android --variant=developmentrelease --appIdSuffix development",
-    "android:prod": "react-native run-android --variant=productiondebug --appIdSuffix production",
-    "android:prod-release": "react-native run-android --variant=productionrelease --appIdSuffix production"
+    "android:dev": "react-native run-android --variant=devdebug --appIdSuffix dev",
+    "android:dev-release": "react-native run-android --variant=devrelease --appIdSuffix dev",
+    "android:prod": "react-native run-android --variant=proddebug --appIdSuffix prod",
+    "android:prod-release": "react-native run-android --variant=prodrelease --appIdSuffix prod"
   },
   "dependencies": {
     "react": "17.0.2",
