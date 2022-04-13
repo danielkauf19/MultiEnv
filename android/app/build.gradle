@@ -145,7 +145,7 @@ android {
     compileSdkVersion rootProject.ext.compileSdkVersion
     flavorDimensions "default"
     productFlavors {
-        dev {
+        prod {
             minSdkVersion rootProject.ext.minSdkVersion
             applicationId  "com.multienv.prod"
             targetSdkVersion rootProject.ext.targetSdkVersion
